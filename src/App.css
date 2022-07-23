@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.name-field {
+  display: block;
+  margin-right: 5px;
+}
+
+.field {
+  padding: 5px 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 350px;
+
+  text-align: center;
+}
+
+.form-row-button {
+  justify-content: flex-end;
+}
+
+.form {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  padding-bottom: 10px;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: 1px solid #333333
+}
+
+.content-container {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+
+  border-bottom: 1px solid black;
+}
+
+.service-name, .service-price, .service-btn {
+  width: 150px;
+}
+
+.service-price, .service-btn {
+  text-align: center;
+}
+
+.btn {
+  width: 25px;
+  height: 22px;
+  padding: 0;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.img-edit {
+  width: 50%;
+  object-fit: cover;
+}
+
+.btn-control {
+  margin-right: 5px;
+}
+
+.btn-control:last-child {
+  margin-right: 0;
+}
+
+.container-services {
+  width: 65%;
+}
+
+/*loader*/
+.loading-wrapper {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 2rem;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  border-top: 5px solid #aaaaaa95;
+  border-right: 5px solid #aaaaaa98;
+  animation: loader-move 1s infinite linear 1s;
+}
+
+@keyframes loader-move {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*/loader*/
+
+/*error*/
+.error-wrapper {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+  font-size: 2rem;
+  background-color: #ff4488;
+  opacity: 0.8;
+}
+
+.error {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.error-link {
+  text-decoration: none;
+  color: #0000ff;
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.error-link:hover {
+  color: #ffffff;
+}
+/*/error*/
+.error-link {
+  text-decoration: none;
+  color: #0000ff;
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.error-link:hover {
+  color: #ffffff;
+}
